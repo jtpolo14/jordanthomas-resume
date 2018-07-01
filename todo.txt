@@ -1,0 +1,29 @@
+
+
+Requirements Gathering
+	Priority 1
+		Single Page App
+		User should have access to web version of resume 
+		Name, work location, email should be included as a header
+		Obj, Edu, Exp, Skills should be accessable from main page
+	Priority 2 
+		User should have quick/easy access to pdf version of resume
+
+Solution Design
+	WebUI
+	backend
+	db
+	queue
+	AWS
+	github
+
+Service Delivery
+OOP (Python, Java)
+Cloud Architecture (AWS, Docker)
+Web Services (REST/SOAP)
+Microservice Frameworks (Flask, SpringBoot)
+Web Development (HTML5/CSS/JS)
+Data Storage (SQL/NoSQL)
+IT Project Management
+SDLC (Agile, Waterfall)
+Source & Package Management (Git, Pip, Maven, NPM)
