@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import secret from './secrets/secret';
 
 //https://prod.liveshare.vsengsaas.visualstudio.com/join?9EDAA441D71F259F6B83DE3A442AF5085115
 
@@ -10,12 +11,12 @@ class LoggerInner extends React.Component {
       //method: 'GET', // *GET, POST, PUT, DELETE, etc.
       headers: {
          // 'Content-Type': 'application/json',
-          "x-api-key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          "x-api-key": secret,
       }
     });
     const json = await response.json();
     console.log(json);
-  }
+  } 
 
     handleSubmit = (event) => {
         event.preventDefault();

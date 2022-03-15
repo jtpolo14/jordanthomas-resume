@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
-
 import LoggerInner from './LoggerInner';
+import Dashboard from './components/Dashboard'
 
 class App extends Component {
   render() {
@@ -10,7 +10,8 @@ class App extends Component {
       <div className="App">
         <div class="container border d-flex align-items-center justify-content-center">
           {/* <ResumeHeader name="Jordan Thomas" /> */}
-          <LoggerInner />
+          {/* <LoggerInner /> */}
+          <Dashboard />
           {/* <ResumeNav /> */}
         </div>
       </div>
