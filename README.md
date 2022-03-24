@@ -40,6 +40,13 @@ This repository was created with a few goals in mind:
 		- Github
 
 		- Google Cloud Build
+# Data Sources
+```
+| Name/Descrption           | Url
+| ------------------------- | -------------------------------------------------------
+| Fed Funds Rate            | https://www.newyorkfed.org/markets/reference-rates/effr
+| Blockchain Tokens         | https://api.coingecko.com/api
+```
 # References
 
 As with any project, there will be topics in which the team must perform additional research to determine the best solution to a problem. Below are the resources that we found helpful:
