@@ -8,12 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div class="container border d-flex align-items-center justify-content-center">
-          {/* <ResumeHeader name="Jordan Thomas" /> */}
-          {/* <LoggerInner /> */}
-          <Dashboard />
-          {/* <ResumeNav /> */}
-        </div>
+        <ResumeHeader name="Jordan Thomas" /> 
+        {/*<ResumeNav /> */}
+        <Dashboard />
       </div>
     );
   }
@@ -21,18 +18,18 @@ class App extends Component {
 
 export default App;
 
-// class ResumeHeader extends React.Component {
-//   render() {
-//     return (
-//       <div class="jumbotron jumbotron-fluid">
-//         <div class="container">
-//           <h1 class="display-4">Jordan Thomas</h1>
-//           <p class="lead">Bloomington, IL | <a href="https://twitter.com/JtOsc3d">@jtosc3d</a> | <a href="mailto:jordanthomas91@live.com">jordanthomas91@live.com</a> | <a href="http://osc3d.com/">Open Source Classroom</a></p>
-//         </div>
-//       </div>
-//     )
-//   }
-// }
+class ResumeHeader extends React.Component {
+  render() {
+    return (
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Jordan Thomas</h1>
+          <p class="lead">Bloomington, IL | <a href="https://github.com/jtpolo14">Github</a> | <a href="mailto:jordanthomas91@live.com">jordanthomas91@live.com</a> | <a href="https://www.linkedin.com/in/jordan-thomas-56787851">LinkedIn</a></p>
+        </div>
+      </div>
+    )
+  }
+}
 
 function NavLink(props) {
   return (
@@ -111,9 +108,6 @@ class ResumeNav extends React.Component {
   componentWillUnmount() {
     this.currentNavMember = 'Objective';
   }
-
-  // This syntax ensures `this` is bound within handleClick.
-  // Warning: this is *experimental* syntax.
 
   UpdateNavGroup = (newNavMember) => {
     var i = [];

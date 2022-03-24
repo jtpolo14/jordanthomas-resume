@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
-import { api_call } from './helpers'
+import { api_call_test } from './helpers'
 
 class TileCoins extends Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   // this.state = {
-  //   //   data: data,
-  //   // }
-  // }
+constructor(props) {
+    super(props);
+    this.state = {
+       data: api_call_test,
+    }
+  }
 
   render() {
     return (
       <div>
         <div class="container">
           <div class="card border-secondary mb-3">
-            <div class="card-header">{this.props.data.name}</div>
+            <div class="card-header">Coins</div>
             <div class="card-body text-secondary">
-              <h5 class="card-title">BTC</h5>
-              <h5 class="card-title">ETH</h5>
+              {
+                this.state.data.map(coin => <h5 class="card-title">{coin.name} : ${coin.price}</h5>)
+              }
             </div>
           </div>
         </div>

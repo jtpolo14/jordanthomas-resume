@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TileCoins from './TileCoins'
+import TileIndices from './TileIndices'
 
 class Tile extends Component {
 
@@ -25,21 +26,10 @@ class Tile extends Component {
       <div>
         {(() => {
           switch (this.props.data.name) {
-            case 'indices':
-              return <div>
-                <div class="container">
-                  <div class="card border-secondary mb-3">
-                    <div class="card-header">{this.props.data.name}</div>
-                    <div class="card-body text-secondary">
-                      <h5 class="card-title">SPY</h5>
-                      <h5 class="card-title">QQQ</h5>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
             case 'coins':
               return <TileCoins data={{ name: 'coins' }} />
+            case 'indices':
+              return <TileIndices data={{ name: 'indices' }} />
             default:
               return null
           }
